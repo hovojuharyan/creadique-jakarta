@@ -1,4 +1,9 @@
 package just.fun.creadique.model.dto;
 
-public class CritiqueUpdateDto {
+import java.util.List;
+
+public record CritiqueUpdateDto(int id,
+                                String title,
+                                String content,
+                                List<TopicDto> topics) {
 }

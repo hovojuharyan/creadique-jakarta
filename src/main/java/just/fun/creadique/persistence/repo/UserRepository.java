@@ -1,7 +1,6 @@
 package just.fun.creadique.persistence.repo;
 
 import just.fun.creadique.model.entity.UserEntity;
-import just.fun.creadique.model.entity.UserUpdateEntity;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,7 +13,7 @@ public interface UserRepository {
 
     Optional<UserEntity> get(int id);
 
-    Optional<UserEntity> update(int id, UserUpdateEntity user);
+    Optional<UserEntity> update(int id, UserEntity user);
 
     List<UserEntity> list();
 

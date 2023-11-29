@@ -1,7 +1,6 @@
 package just.fun.creadique.persistence.repo;
 
 import just.fun.creadique.model.entity.CritiqueEntity;
-import just.fun.creadique.model.entity.CritiqueUpdateEntity;
 import just.fun.creadique.model.pojo.Topic;
 import just.fun.creadique.model.pojo.User;
 
@@ -16,7 +15,7 @@ public interface CritiqueRepository {
 
     Optional<CritiqueEntity> get(int id);
 
-    Optional<CritiqueEntity> update(int id, CritiqueUpdateEntity critique);
+    Optional<CritiqueEntity> update(int id, CritiqueEntity critique);
 
     List<CritiqueEntity> list();
 

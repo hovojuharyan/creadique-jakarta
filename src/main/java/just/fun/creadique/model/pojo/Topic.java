@@ -1,4 +1,6 @@
 package just.fun.creadique.model.pojo;
 
-public class Topic {
+public record Topic(int id,
+                    String title,
+                    String description) {
 }

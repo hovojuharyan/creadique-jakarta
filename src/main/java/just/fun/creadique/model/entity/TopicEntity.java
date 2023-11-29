@@ -1,4 +1,6 @@
 package just.fun.creadique.model.entity;
 
-public class TopicEntity {
+public record TopicEntity(int id,
+                          String title,
+                          String description) {
 }

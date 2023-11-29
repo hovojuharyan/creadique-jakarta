@@ -1,4 +1,11 @@
 package just.fun.creadique.model.pojo;
 
-public class User {
+import java.time.LocalDate;
+
+public record User(int id,
+                   String username,
+                   String email,
+                   String password,
+                   LocalDate birthdate,
+                   String introduction) {
 }

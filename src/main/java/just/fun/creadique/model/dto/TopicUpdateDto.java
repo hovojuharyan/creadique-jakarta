@@ -1,4 +1,6 @@
 package just.fun.creadique.model.dto;
 
-public class TopicUpdateDto {
+public record TopicUpdateDto(int id,
+                             String title,
+                             String description) {
 }

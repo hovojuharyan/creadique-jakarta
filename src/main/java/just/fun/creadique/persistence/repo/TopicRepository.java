@@ -1,7 +1,6 @@
 package just.fun.creadique.persistence.repo;
 
 import just.fun.creadique.model.entity.TopicEntity;
-import just.fun.creadique.model.entity.TopicUpdateEntity;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,7 +12,7 @@ public interface TopicRepository {
 
     Optional<TopicEntity> delete(int id);
 
-    Optional<TopicEntity> update(int id, TopicUpdateEntity topic);
+    Optional<TopicEntity> update(int id, TopicEntity topic);
 
     List<TopicEntity> list();
 
