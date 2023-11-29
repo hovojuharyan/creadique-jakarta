@@ -1,4 +1,4 @@
-package just.fun.creadique.dao.repo;
+package just.fun.creadique.persistence.repo;
 
 import just.fun.creadique.model.entity.CritiqueEntity;
 import just.fun.creadique.model.entity.CritiqueUpdateEntity;
