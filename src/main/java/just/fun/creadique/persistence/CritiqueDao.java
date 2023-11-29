@@ -1,4 +1,4 @@
-package just.fun.creadique.persistence.repo;
+package just.fun.creadique.persistence;
 
 import just.fun.creadique.model.entity.CritiqueEntity;
 import just.fun.creadique.model.pojo.Topic;
@@ -7,7 +7,7 @@ import just.fun.creadique.model.pojo.User;
 import java.util.List;
 import java.util.Optional;
 
-public interface CritiqueRepository {
+public interface CritiqueDao {
 
     CritiqueEntity create(CritiqueEntity critique);
 

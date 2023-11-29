@@ -1,11 +1,11 @@
-package just.fun.creadique.persistence.repo;
+package just.fun.creadique.persistence;
 
 import just.fun.creadique.model.entity.TopicEntity;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface TopicRepository {
+public interface TopicDao {
     TopicEntity create(TopicEntity topic);
 
     Optional<TopicEntity> get(int id);
