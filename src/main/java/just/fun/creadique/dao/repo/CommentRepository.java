@@ -1,19 +1,19 @@
 package just.fun.creadique.dao.repo;
 
-import just.fun.creadique.model.pojo.Comment;
-import just.fun.creadique.model.pojo.Critique;
+import just.fun.creadique.model.entity.CommentEntity;
+import just.fun.creadique.model.entity.CommentUpdateEntity;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface CommentRepository {
-    Comment create(Comment comment);
+    CommentEntity create(CommentEntity comment);
 
-    Optional<Comment> delete(int id);
+    Optional<CommentEntity> delete(int id);
 
-    List<Comment> listByCritique(Critique critique);
+    List<CommentEntity> listByCritique(CommentEntity comment);
 
-    Optional<Comment> update(int id, Comment comment);
+    Optional<CommentEntity> update(int id, CommentUpdateEntity comment);
 
     void rate(int id, int rate);
 

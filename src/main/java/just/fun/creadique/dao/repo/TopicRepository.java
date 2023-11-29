@@ -1,21 +1,22 @@
 package just.fun.creadique.dao.repo;
 
-import just.fun.creadique.model.pojo.Topic;
+import just.fun.creadique.model.entity.TopicEntity;
+import just.fun.creadique.model.entity.TopicUpdateEntity;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface TopicRepository {
-    Topic create(Topic topic);
+    TopicEntity create(TopicEntity topic);
 
-    Optional<Topic> get(int id);
+    Optional<TopicEntity> get(int id);
 
-    Optional<Topic> delete(int id);
+    Optional<TopicEntity> delete(int id);
 
-    Optional<Topic> update(int id, Topic topic);
+    Optional<TopicEntity> update(int id, TopicUpdateEntity topic);
 
-    List<Topic> list();
+    List<TopicEntity> list();
 
-    List<Topic> listFollowing(int userId);
+    List<TopicEntity> listFollowing(int userId);
 
 }

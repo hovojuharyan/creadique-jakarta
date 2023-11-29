@@ -1,23 +1,24 @@
 package just.fun.creadique.dao.repo;
 
-import just.fun.creadique.model.pojo.User;
+import just.fun.creadique.model.entity.UserEntity;
+import just.fun.creadique.model.entity.UserUpdateEntity;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface UserRepository {
 
-    User create(User user);
+    UserEntity create(UserEntity user);
 
-    Optional<User> delete(int id);
+    Optional<UserEntity> delete(int id);
 
-    Optional<User> get(int id);
+    Optional<UserEntity> get(int id);
 
-    Optional<User> update(int id, User user);
+    Optional<UserEntity> update(int id, UserUpdateEntity user);
 
-    List<User> list();
+    List<UserEntity> list();
 
-    List<User> listFollowing(int id);
+    List<UserEntity> listFollowing(int id);
 
-    List<User> listFollowers(int id);
+    List<UserEntity> listFollowers(int id);
 }
