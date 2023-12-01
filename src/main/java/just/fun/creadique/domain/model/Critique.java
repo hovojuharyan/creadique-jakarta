@@ -1,4 +1,4 @@
-package just.fun.creadique.model.pojo;
+package just.fun.creadique.domain.model;
 
 import java.time.LocalDate;
 import java.util.List;
